@@ -7,6 +7,8 @@ import com.markbay.messenger.entities.Status;
 import com.markbay.messenger.entities.User;
 import com.markbay.messenger.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -16,6 +18,7 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService{
+    Logger logger = LoggerFactory.getLogger(Service.class);
 
     private final UserRepository userRepository;
     @Override
@@ -34,8 +37,8 @@ public class UserServiceImpl implements UserService{
         );
 
         newUser.setStatus(Status.ONLINE);
-        userRepository.save(newUser);
 
+        userRepository.save(newUser);
         return new SignUpDtoResponse("User Registration Successful", newUser);
 
     }

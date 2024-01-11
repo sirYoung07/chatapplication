@@ -10,6 +10,7 @@ import lombok.Setter;
 @Getter
 @Data
 
+
 public class SignUpDtoResponse {
     private String message;
     private User user;

@@ -1,0 +1,288 @@
+2024-01-11T12:38:17.094Z  INFO 251637 --- [restartedMain] c.m.messenger.MessengerApplication       : Starting MessengerApplication using Java 17.0.8 with PID 251637 (/home/siryoung/Projects/messenger/target/classes started by siryoung in /home/siryoung/Projects/messenger)
+2024-01-11T12:38:17.098Z  INFO 251637 --- [restartedMain] c.m.messenger.MessengerApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-01-11T12:38:17.225Z  INFO 251637 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-11T12:38:17.225Z  INFO 251637 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-11T12:38:18.542Z  INFO 251637 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11T12:38:18.628Z  INFO 251637 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interface.
+2024-01-11T12:38:19.545Z  INFO 251637 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-11T12:38:19.558Z  INFO 251637 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-11T12:38:19.559Z  INFO 251637 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-11T12:38:19.653Z  INFO 251637 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-11T12:38:19.654Z  INFO 251637 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2426 ms
+2024-01-11T12:38:19.913Z  INFO 251637 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11T12:38:19.974Z  INFO 251637 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.17.Final
+2024-01-11T12:38:19.977Z  INFO 251637 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-01-11T12:38:20.307Z  INFO 251637 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-11T12:38:20.340Z  INFO 251637 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-11T12:38:20.793Z  INFO 251637 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a36cb2c
+2024-01-11T12:38:20.797Z  INFO 251637 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-11T12:38:21.929Z  INFO 251637 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-11T12:38:21.983Z  INFO 251637 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T12:38:22.803Z  WARN 251637 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-11T12:38:23.456Z  INFO 251637 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-11T12:38:23.504Z  INFO 251637 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-11T12:38:23.507Z  INFO 251637 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-01-11T12:38:23.509Z  INFO 251637 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2b4991d1]]
+2024-01-11T12:38:23.511Z  INFO 251637 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-01-11T12:38:23.525Z  INFO 251637 --- [restartedMain] c.m.messenger.MessengerApplication       : Started MessengerApplication in 7.411 seconds (process running for 8.284)
+2024-01-11T12:39:23.487Z  INFO 251637 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-01-11T12:45:34.501Z  INFO 251637 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-01-11T12:45:34.502Z  INFO 251637 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2b4991d1]]
+2024-01-11T12:45:34.503Z  INFO 251637 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-01-11T12:45:34.519Z  INFO 251637 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T12:45:34.524Z  INFO 251637 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-11T12:45:34.537Z  INFO 251637 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-11T12:45:41.702Z  INFO 254937 --- [restartedMain] c.m.messenger.MessengerApplication       : Starting MessengerApplication using Java 17.0.8 with PID 254937 (/home/siryoung/Projects/messenger/target/classes started by siryoung in /home/siryoung/Projects/messenger)
+2024-01-11T12:45:41.707Z  INFO 254937 --- [restartedMain] c.m.messenger.MessengerApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-01-11T12:45:41.863Z  INFO 254937 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-11T12:45:41.864Z  INFO 254937 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-11T12:45:43.159Z  INFO 254937 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11T12:45:43.249Z  INFO 254937 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interface.
+2024-01-11T12:45:44.134Z  INFO 254937 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-11T12:45:44.147Z  INFO 254937 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-11T12:45:44.147Z  INFO 254937 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-11T12:45:44.238Z  INFO 254937 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-11T12:45:44.238Z  INFO 254937 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2373 ms
+2024-01-11T12:45:44.497Z  INFO 254937 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11T12:45:44.602Z  INFO 254937 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.17.Final
+2024-01-11T12:45:44.606Z  INFO 254937 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-01-11T12:45:45.153Z  INFO 254937 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-11T12:45:45.186Z  INFO 254937 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-11T12:45:45.677Z  INFO 254937 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f1b32d
+2024-01-11T12:45:45.680Z  INFO 254937 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-11T12:45:46.902Z  INFO 254937 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-11T12:45:46.958Z  INFO 254937 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T12:45:47.699Z  WARN 254937 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-11T12:45:48.142Z  INFO 254937 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-11T12:45:48.184Z  INFO 254937 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-11T12:45:48.186Z  INFO 254937 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-01-11T12:45:48.189Z  INFO 254937 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@185abd9]]
+2024-01-11T12:45:48.190Z  INFO 254937 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-01-11T12:45:48.206Z  INFO 254937 --- [restartedMain] c.m.messenger.MessengerApplication       : Started MessengerApplication in 7.498 seconds (process running for 8.326)
+2024-01-11T12:46:31.301Z  INFO 254937 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-01-11T12:46:31.302Z  INFO 254937 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@185abd9]]
+2024-01-11T12:46:31.303Z  INFO 254937 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-01-11T12:46:31.328Z  INFO 254937 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T12:46:31.333Z  INFO 254937 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-11T12:46:31.355Z  INFO 254937 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-11T12:46:36.027Z  INFO 255367 --- [restartedMain] c.m.messenger.MessengerApplication       : Starting MessengerApplication using Java 17.0.8 with PID 255367 (/home/siryoung/Projects/messenger/target/classes started by siryoung in /home/siryoung/Projects/messenger)
+2024-01-11T12:46:36.032Z  INFO 255367 --- [restartedMain] c.m.messenger.MessengerApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-01-11T12:46:36.207Z  INFO 255367 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-11T12:46:36.208Z  INFO 255367 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-11T12:46:37.629Z  INFO 255367 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11T12:46:37.710Z  INFO 255367 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-01-11T12:46:38.586Z  INFO 255367 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-11T12:46:38.597Z  INFO 255367 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-11T12:46:38.598Z  INFO 255367 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-11T12:46:38.668Z  INFO 255367 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-11T12:46:38.669Z  INFO 255367 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2458 ms
+2024-01-11T12:46:38.888Z  INFO 255367 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11T12:46:38.934Z  INFO 255367 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.17.Final
+2024-01-11T12:46:38.937Z  INFO 255367 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-01-11T12:46:39.252Z  INFO 255367 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-11T12:46:39.286Z  INFO 255367 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-11T12:46:39.698Z  INFO 255367 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a36cb2c
+2024-01-11T12:46:39.700Z  INFO 255367 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-11T12:46:40.844Z  INFO 255367 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-11T12:46:40.911Z  INFO 255367 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T12:46:41.700Z  WARN 255367 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-11T12:46:42.184Z  INFO 255367 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-11T12:46:42.224Z  INFO 255367 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-11T12:46:42.227Z  INFO 255367 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-01-11T12:46:42.230Z  INFO 255367 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2b4991d1]]
+2024-01-11T12:46:42.231Z  INFO 255367 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-01-11T12:46:42.246Z  INFO 255367 --- [restartedMain] c.m.messenger.MessengerApplication       : Started MessengerApplication in 7.064 seconds (process running for 7.942)
+2024-01-11T12:47:42.214Z  INFO 255367 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-01-11T12:48:04.011Z  INFO 255367 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-01-11T12:48:04.012Z  INFO 255367 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2b4991d1]]
+2024-01-11T12:48:04.012Z  INFO 255367 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-01-11T12:48:04.029Z  INFO 255367 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T12:48:04.033Z  INFO 255367 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-11T12:48:04.046Z  INFO 255367 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-11T12:48:09.775Z  INFO 255987 --- [restartedMain] c.m.messenger.MessengerApplication       : Starting MessengerApplication using Java 17.0.8 with PID 255987 (/home/siryoung/Projects/messenger/target/classes started by siryoung in /home/siryoung/Projects/messenger)
+2024-01-11T12:48:09.799Z  INFO 255987 --- [restartedMain] c.m.messenger.MessengerApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-01-11T12:48:09.953Z  INFO 255987 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-11T12:48:09.954Z  INFO 255987 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-11T12:48:11.391Z  INFO 255987 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11T12:48:11.464Z  INFO 255987 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
+2024-01-11T12:48:12.353Z  INFO 255987 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-11T12:48:12.366Z  INFO 255987 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-11T12:48:12.367Z  INFO 255987 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-11T12:48:12.450Z  INFO 255987 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-11T12:48:12.451Z  INFO 255987 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2494 ms
+2024-01-11T12:48:12.638Z  INFO 255987 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11T12:48:12.691Z  INFO 255987 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.17.Final
+2024-01-11T12:48:12.694Z  INFO 255987 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-01-11T12:48:13.031Z  INFO 255987 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-11T12:48:13.068Z  INFO 255987 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-11T12:48:13.459Z  INFO 255987 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cdf3e07
+2024-01-11T12:48:13.461Z  INFO 255987 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-11T12:48:14.593Z  INFO 255987 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-11T12:48:14.657Z  INFO 255987 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T12:48:15.549Z  WARN 255987 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-11T12:48:16.027Z  INFO 255987 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-11T12:48:16.081Z  INFO 255987 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-11T12:48:16.083Z  INFO 255987 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-01-11T12:48:16.086Z  INFO 255987 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@285acd5]]
+2024-01-11T12:48:16.087Z  INFO 255987 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-01-11T12:48:16.102Z  INFO 255987 --- [restartedMain] c.m.messenger.MessengerApplication       : Started MessengerApplication in 7.445 seconds (process running for 8.437)
+2024-01-11T12:49:16.078Z  INFO 255987 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-01-11T12:50:28.936Z  INFO 255987 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-11T12:50:28.937Z  INFO 255987 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-11T12:50:28.939Z  INFO 255987 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-11T12:50:29.827Z  INFO 255987 --- [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 411 ms
+2024-01-11T12:50:53.347Z  INFO 255987 --- [http-nio-8081-exec-5] org.springframework.stereotype.Service   : HEEEEEEEEEEEEEEEEEEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY 
+2024-01-11T12:51:49.480Z  INFO 255987 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-01-11T12:51:49.480Z  INFO 255987 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@285acd5]]
+2024-01-11T12:51:49.480Z  INFO 255987 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-01-11T12:51:49.492Z  INFO 255987 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T12:51:49.497Z  INFO 255987 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-11T12:51:49.511Z  INFO 255987 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-11T12:51:54.521Z  INFO 257558 --- [restartedMain] c.m.messenger.MessengerApplication       : Starting MessengerApplication using Java 17.0.8 with PID 257558 (/home/siryoung/Projects/messenger/target/classes started by siryoung in /home/siryoung/Projects/messenger)
+2024-01-11T12:51:54.525Z  INFO 257558 --- [restartedMain] c.m.messenger.MessengerApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-01-11T12:51:54.645Z  INFO 257558 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-11T12:51:54.646Z  INFO 257558 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-11T12:51:56.021Z  INFO 257558 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11T12:51:56.101Z  INFO 257558 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-01-11T12:51:56.996Z  INFO 257558 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-11T12:51:57.010Z  INFO 257558 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-11T12:51:57.011Z  INFO 257558 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-11T12:51:57.103Z  INFO 257558 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-11T12:51:57.104Z  INFO 257558 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2455 ms
+2024-01-11T12:51:57.344Z  INFO 257558 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11T12:51:57.408Z  INFO 257558 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.17.Final
+2024-01-11T12:51:57.411Z  INFO 257558 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-01-11T12:51:57.752Z  INFO 257558 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-11T12:51:57.777Z  INFO 257558 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-11T12:51:58.120Z  INFO 257558 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@475ea08b
+2024-01-11T12:51:58.122Z  INFO 257558 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-11T12:51:59.174Z  INFO 257558 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-11T12:51:59.223Z  INFO 257558 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T12:51:59.943Z  WARN 257558 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-11T12:52:00.461Z  INFO 257558 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-11T12:52:00.509Z  INFO 257558 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-11T12:52:00.512Z  INFO 257558 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-01-11T12:52:00.517Z  INFO 257558 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7a4113b]]
+2024-01-11T12:52:00.519Z  INFO 257558 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-01-11T12:52:00.539Z  INFO 257558 --- [restartedMain] c.m.messenger.MessengerApplication       : Started MessengerApplication in 6.81 seconds (process running for 7.587)
+2024-01-11T12:52:05.997Z  INFO 257558 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-11T12:52:05.997Z  INFO 257558 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-11T12:52:06.000Z  INFO 257558 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-01-11T12:52:13.286Z  INFO 257558 --- [http-nio-8081-exec-2] org.springframework.stereotype.Service   : new usercom.markbay.messenger.entities.User@69212bc0
+2024-01-11T12:52:37.350Z  INFO 257558 --- [http-nio-8081-exec-4] org.springframework.stereotype.Service   : new usercom.markbay.messenger.entities.User@5589ef1d
+2024-01-11T12:53:00.511Z  INFO 257558 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-01-11T12:54:07.850Z  INFO 257558 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-01-11T12:54:07.850Z  INFO 257558 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7a4113b]]
+2024-01-11T12:54:07.850Z  INFO 257558 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-01-11T12:54:07.863Z  INFO 257558 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T12:54:07.867Z  INFO 257558 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-11T12:54:07.878Z  INFO 257558 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-11T12:54:13.065Z  INFO 258681 --- [restartedMain] c.m.messenger.MessengerApplication       : Starting MessengerApplication using Java 17.0.8 with PID 258681 (/home/siryoung/Projects/messenger/target/classes started by siryoung in /home/siryoung/Projects/messenger)
+2024-01-11T12:54:13.070Z  INFO 258681 --- [restartedMain] c.m.messenger.MessengerApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-01-11T12:54:13.175Z  INFO 258681 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-11T12:54:13.175Z  INFO 258681 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-11T12:54:14.459Z  INFO 258681 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11T12:54:14.537Z  INFO 258681 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
+2024-01-11T12:54:15.482Z  INFO 258681 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-11T12:54:15.496Z  INFO 258681 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-11T12:54:15.497Z  INFO 258681 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-11T12:54:15.571Z  INFO 258681 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-11T12:54:15.571Z  INFO 258681 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2395 ms
+2024-01-11T12:54:15.791Z  INFO 258681 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11T12:54:15.854Z  INFO 258681 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.17.Final
+2024-01-11T12:54:15.857Z  INFO 258681 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-01-11T12:54:16.199Z  INFO 258681 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-11T12:54:16.232Z  INFO 258681 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-11T12:54:16.669Z  INFO 258681 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b447417
+2024-01-11T12:54:16.672Z  INFO 258681 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-11T12:54:17.782Z  INFO 258681 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-11T12:54:17.832Z  INFO 258681 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T12:54:18.597Z  WARN 258681 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-11T12:54:19.053Z  INFO 258681 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-11T12:54:19.096Z  INFO 258681 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-11T12:54:19.100Z  INFO 258681 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-01-11T12:54:19.104Z  INFO 258681 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@b9371e]]
+2024-01-11T12:54:19.105Z  INFO 258681 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-01-11T12:54:19.126Z  INFO 258681 --- [restartedMain] c.m.messenger.MessengerApplication       : Started MessengerApplication in 6.917 seconds (process running for 7.722)
+2024-01-11T12:54:31.800Z  INFO 258681 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-11T12:54:31.800Z  INFO 258681 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-11T12:54:31.802Z  INFO 258681 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-11T12:54:31.993Z  WARN 258681 --- [http-nio-8081-exec-1] org.springframework.stereotype.Service   : heyyyyyyyyyyyyyyyyyycom.markbay.messenger.entities.User@40fa72c7
+2024-01-11T12:55:19.097Z  INFO 258681 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-01-11T13:06:38.516Z  INFO 258681 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-01-11T13:06:38.517Z  INFO 258681 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@b9371e]]
+2024-01-11T13:06:38.518Z  INFO 258681 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-01-11T13:06:38.535Z  INFO 258681 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T13:06:38.542Z  INFO 258681 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-11T13:06:38.557Z  INFO 258681 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-11T13:06:44.548Z  INFO 264832 --- [restartedMain] c.m.messenger.MessengerApplication       : Starting MessengerApplication using Java 17.0.8 with PID 264832 (/home/siryoung/Projects/messenger/target/classes started by siryoung in /home/siryoung/Projects/messenger)
+2024-01-11T13:06:44.553Z  INFO 264832 --- [restartedMain] c.m.messenger.MessengerApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-01-11T13:06:44.766Z  INFO 264832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-11T13:06:44.766Z  INFO 264832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-11T13:06:46.205Z  INFO 264832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11T13:06:46.288Z  INFO 264832 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interface.
+2024-01-11T13:06:47.255Z  INFO 264832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-11T13:06:47.269Z  INFO 264832 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-11T13:06:47.270Z  INFO 264832 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-11T13:06:47.364Z  INFO 264832 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-11T13:06:47.365Z  INFO 264832 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2598 ms
+2024-01-11T13:06:47.658Z  INFO 264832 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11T13:06:47.729Z  INFO 264832 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.17.Final
+2024-01-11T13:06:47.733Z  INFO 264832 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-01-11T13:06:48.115Z  INFO 264832 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-11T13:06:48.156Z  INFO 264832 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-11T13:06:48.609Z  INFO 264832 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62559dc2
+2024-01-11T13:06:48.612Z  INFO 264832 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-11T13:06:49.776Z  INFO 264832 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-11T13:06:49.832Z  INFO 264832 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T13:06:50.602Z  WARN 264832 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-11T13:06:51.112Z  INFO 264832 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-11T13:06:51.152Z  INFO 264832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-11T13:06:51.155Z  INFO 264832 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-01-11T13:06:51.158Z  INFO 264832 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@a7a5857]]
+2024-01-11T13:06:51.159Z  INFO 264832 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-01-11T13:06:51.174Z  INFO 264832 --- [restartedMain] c.m.messenger.MessengerApplication       : Started MessengerApplication in 7.575 seconds (process running for 8.425)
+2024-01-11T13:07:11.716Z  INFO 264832 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-11T13:07:11.717Z  INFO 264832 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-11T13:07:11.720Z  INFO 264832 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-01-11T13:07:11.972Z  WARN 264832 --- [http-nio-8081-exec-1] org.springframework.stereotype.Service   : heyyyyyyyyyyyyyyyyyyUser(Id=null, fullName=sirYounnnnnnnng, userName=sihrihghigiiiiiieg, status=null, createdAt=2024-01-11T13:07:11.971465109, updatedAt=2024-01-11T13:07:11.971503128)
+2024-01-11T13:07:51.161Z  INFO 264832 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-01-11T13:08:59.237Z  INFO 264832 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-01-11T13:08:59.240Z  INFO 264832 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@a7a5857]]
+2024-01-11T13:08:59.242Z  INFO 264832 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-01-11T13:08:59.268Z  INFO 264832 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T13:08:59.273Z  INFO 264832 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-11T13:08:59.287Z  INFO 264832 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-11T13:09:05.587Z  INFO 265931 --- [restartedMain] c.m.messenger.MessengerApplication       : Starting MessengerApplication using Java 17.0.8 with PID 265931 (/home/siryoung/Projects/messenger/target/classes started by siryoung in /home/siryoung/Projects/messenger)
+2024-01-11T13:09:05.598Z  INFO 265931 --- [restartedMain] c.m.messenger.MessengerApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-01-11T13:09:05.801Z  INFO 265931 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-11T13:09:05.806Z  INFO 265931 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-11T13:09:07.303Z  INFO 265931 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11T13:09:07.394Z  INFO 265931 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interface.
+2024-01-11T13:09:08.427Z  INFO 265931 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-01-11T13:09:08.446Z  INFO 265931 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-11T13:09:08.447Z  INFO 265931 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-11T13:09:08.540Z  INFO 265931 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-11T13:09:08.541Z  INFO 265931 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2729 ms
+2024-01-11T13:09:08.814Z  INFO 265931 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11T13:09:08.889Z  INFO 265931 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.17.Final
+2024-01-11T13:09:08.892Z  INFO 265931 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-01-11T13:09:09.268Z  INFO 265931 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-11T13:09:09.305Z  INFO 265931 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-11T13:09:09.748Z  INFO 265931 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64f55944
+2024-01-11T13:09:09.751Z  INFO 265931 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-11T13:09:10.932Z  INFO 265931 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-11T13:09:11.007Z  INFO 265931 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11T13:09:11.925Z  WARN 265931 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-11T13:09:12.429Z  INFO 265931 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-11T13:09:12.472Z  INFO 265931 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-11T13:09:12.475Z  INFO 265931 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-01-11T13:09:12.481Z  INFO 265931 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4a464744]]
+2024-01-11T13:09:12.482Z  INFO 265931 --- [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-01-11T13:09:12.502Z  INFO 265931 --- [restartedMain] c.m.messenger.MessengerApplication       : Started MessengerApplication in 7.998 seconds (process running for 8.983)
+2024-01-11T13:09:19.816Z  INFO 265931 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-11T13:09:19.816Z  INFO 265931 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-11T13:09:19.820Z  INFO 265931 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-01-11T13:09:20.910Z  INFO 265931 --- [http-nio-8081-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 448 ms
+2024-01-11T13:09:46.097Z  WARN 265931 --- [http-nio-8081-exec-5] org.springframework.stereotype.Service   : heyyyyyyyyyyyyyyyyyyUser(Id=883cba34-5c15-4705-9a4c-120f90f31724, fullName=bayo, userName=markingg, status=ONLINE, createdAt=2024-01-11T13:09:46.042129447, updatedAt=2024-01-11T13:09:46.042168015)
+2024-01-11T13:10:12.472Z  INFO 265931 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]

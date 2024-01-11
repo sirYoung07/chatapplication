@@ -2,6 +2,7 @@ package com.markbay.messenger.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.GeneratorType;
@@ -13,6 +14,7 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 @Table(name = "users")
 public class User {
     @Id
@@ -31,4 +33,11 @@ public class User {
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
     }
+
+    public User(String fullName, String userName) {
+        this.fullName = fullName;
+        this.userName = userName;
+
+    }
+
 }

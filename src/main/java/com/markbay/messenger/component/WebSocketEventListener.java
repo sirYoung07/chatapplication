@@ -1,9 +1,8 @@
 package com.markbay.messenger.component;
 
-import com.markbay.messenger.dto.ChatMessage;
+import com.markbay.messenger.dto.ChatMessageDTO;
 import com.markbay.messenger.dto.MessageType;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.flogger.Flogger;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.event.EventListener;
 import org.springframework.messaging.simp.SimpMessageSendingOperations;
@@ -24,7 +23,7 @@ public class WebSocketEventListener {
         String username = (String) Objects.requireNonNull(headerAccessor.getSessionAttributes()).get("username");
         if (username != null) {
            log.info("user disconnected: {}", username);
-            var chatMessage = ChatMessage.builder()
+            var chatMessage = ChatMessageDTO.builder()
                               .type(MessageType.LEAVE)
                                   .sender(username)
                                       .build();

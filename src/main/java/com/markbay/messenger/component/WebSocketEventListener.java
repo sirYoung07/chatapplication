@@ -17,6 +17,7 @@ import java.util.Objects;
 @Slf4j
 public class WebSocketEventListener {
     private final SimpMessageSendingOperations messageTemplate;
+
     @EventListener
     public void handleMessageDisconnectListener(SessionDisconnectEvent event){
         StompHeaderAccessor headerAccessor = StompHeaderAccessor.wrap(event.getMessage());
